@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorTitleDarkBackGround"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_class_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="德智测试班"
+            android:textSize="20sp"
+            android:textColor="@color/colorTitleClass"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_switch_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="...."
+            android:textColor="@color/colorTitleClass"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_class_name"
+            app:layout_constraintStart_toEndOf="@+id/tv_class_name"
+            app:layout_constraintTop_toTopOf="@+id/tv_class_name" />
+
+        <TextView
+            android:id="@+id/tv_now_time"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:text="2018年3月5日 星期一 12:46:51"
+            android:textColor="@color/colorTitleClass"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_class_photo"
+        android:layout_width="700dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="72dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_title_class"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="班级风采"
+            android:textColor="@color/colorTitleLightBackGround" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/drawable_title_class_ll">
+            <com.youth.banner.Banner
+                android:layout_margin="2dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:image_scale_type="fit_xy"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="528dp"
+        android:layout_height="400dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="72dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_title_class"
+            android:gravity="center"
+            android:text="课程表"
+            android:textSize="20sp"
+            android:textColor="@color/colorTitleLightBackGround" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/drawable_title_class_ll">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+            </LinearLayout>
+            <View
+                android:background="#F8F6F9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="第一节:"
+                    android:textColor="#1F1F1F"
+                    android:layout_marginLeft="200dp"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_first_class"
+                    android:text=""
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#1F1F1F"
+                    android:layout_marginLeft="30dp"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:background="#F8F8F8"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="第二节:"
+                    android:textColor="#1F1F1F"
+                    android:layout_marginLeft="200dp"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_second_class"
+                    android:text=""
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#1F1F1F"
+                    android:layout_marginLeft="30dp"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="第三节:"
+                    android:textColor="#1F1F1F"
+                    android:layout_marginLeft="200dp"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_third_class"
+                    android:text=""
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#1F1F1F"
+                    android:layout_marginLeft="30dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="#F8F8F8"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="第四节:"
+                    android:textColor="#1F1F1F"
+                    android:layout_marginLeft="200dp"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_fourth_class"
+                    android:text=""
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#1F1F1F"
+                    android:layout_marginLeft="30dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="第五节:"
+                    android:textColor="#1F1F1F"
+                    android:layout_marginLeft="200dp"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_fiveth_class"
+                    android:text=""
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#1F1F1F"
+                    android:layout_marginLeft="30dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="#F8F8F8"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="第六节:"
+                    android:textColor="#1F1F1F"
+                    android:layout_marginLeft="200dp"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_sixth_class"
+                    android:text=""
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#1F1F1F"
+                    android:layout_marginLeft="30dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="第七节:"
+                    android:textColor="#1F1F1F"
+                    android:layout_marginLeft="200dp"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_senventh_class"
+                    android:text=""
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#1F1F1F"
+                    android:layout_marginLeft="30dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="#F8F8F8"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="第八节:"
+                    android:textColor="#1F1F1F"
+                    android:layout_marginLeft="200dp"
+                    />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_eighth_class"
+                    android:text=""
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#1F1F1F"
+                    android:layout_marginLeft="30dp"
+                    />
+            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="220dp"
+        android:layout_marginEnd="728dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="490dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_title_notice"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="通知"
+            android:textColor="@color/colorTitleLightBackGround" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/drawable_title_class_ll">
+            <TextView
+                android:layout_margin="28dp"
+                android:id="@+id/tv_notice"
+                android:textSize="16sp"
+                android:text="通知"
+                android:textColor="#3B3B3B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="395dp"
+        android:layout_marginTop="490dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_title_cabine"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="储物柜"
+            android:textColor="@color/colorTitleLightBackGround" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/drawable_title_class_ll">
+            <com.sunfusheng.marqueeview.MarqueeView
+            android:id="@+id/marqueeView_cabine_1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:mvAnimDuration="1000"
+            app:mvInterval="3000"
+            app:mvTextColor="#3B3B3B"
+            app:mvGravity ="center"
+            app:mvTextSize="14sp"
+            app:mvSingleLine="true"/>
+            <com.sunfusheng.marqueeview.MarqueeView
+                android:id="@+id/marqueeView_cabine_2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:mvAnimDuration="1000"
+                app:mvInterval="3000"
+                app:mvTextColor="#3B3B3B"
+                app:mvGravity ="center"
+                app:mvTextSize="14sp"
+                app:mvSingleLine="true"/>
+        </LinearLayout>
+        <com.sunfusheng.marqueeview.MarqueeView
+            android:id="@+id/marqueeView_cabine_3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:mvAnimDuration="1000"
+            app:mvInterval="3000"
+            app:mvTextColor="#3B3B3B"
+            app:mvGravity ="center"
+            app:mvTextSize="14sp"
+            app:mvSingleLine="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="395dp"
+        android:layout_marginTop="603dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_title_leave"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="请假"
+            android:textColor="@color/colorTitleLightBackGround" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/drawable_title_class_ll">
+            <com.sunfusheng.marqueeview.MarqueeView
+                android:id="@+id/marqueeView_leave_1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:mvAnimDuration="1000"
+                app:mvInterval="3000"
+                app:mvTextColor="#3B3B3B"
+                app:mvTextSize="14sp"
+                app:mvGravity ="center"
+                app:mvSingleLine="true"/>
+            <com.sunfusheng.marqueeview.MarqueeView
+                android:id="@+id/marqueeView_leave_2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:mvAnimDuration="1000"
+                app:mvInterval="3000"
+                app:mvTextColor="#3B3B3B"
+                app:mvTextSize="14sp"
+                app:mvGravity ="center"
+                app:mvSingleLine="true"/>
+            <com.sunfusheng.marqueeview.MarqueeView
+                android:id="@+id/marqueeView_leave_3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:mvAnimDuration="1000"
+                app:mvInterval="3000"
+                app:mvTextColor="#3B3B3B"
+                app:mvTextSize="14sp"
+                app:mvGravity ="center"
+                app:mvSingleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="528dp"
+        android:layout_height="220dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="490dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_title_set"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="座次表"
+            android:textColor="@color/colorTitleLightBackGround" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/drawable_title_class_ll">
+            <ImageView
+                android:id="@+id/iv_set_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">智慧校园</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="error_alias_empty">别名为空，请重新设置</string>
+    <string name="error_tag_gs_empty">别名非法</string>
+    <string name="accessibility_service_description">德智校园智能安装服务，后台自动检测版本更新，自动下载新版APK并安装，自动启动新版APP</string>
+</resources>

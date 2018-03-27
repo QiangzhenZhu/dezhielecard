@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/drawable_list_popup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ListView
+        android:id="@+id/lv_login_select"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>
